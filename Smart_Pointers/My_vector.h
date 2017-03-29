@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <vector>
 #include <set>
@@ -189,78 +190,4 @@ void print(IterT begin, IterT end)
 {
     for (auto it = begin; it != end; ++it)
         cout << *it << endl;
-}
-
-class FibonacciGenerator
-{
-public:
-    class iterator : public std::iterator<std::forward_iterator_tag, int>
-    {
-    private:
-        int _a, _b;
-        int _i;
-    public:
-        iterator(int a, int b, int i) :
-            _a(a),
-            _b(b),
-            _i(i)
-        {}
-
-        iterator operator ++()
-        {
-            int c = _a + _b;
-            _a = _b;
-            _b = c;
-            ++_i;
-            return *this;
-        }
-
-        int& operator *()
-        {
-            return _b;
-        }
-
-        bool operator !=(const iterator& rhs) const
-        {
-            return _i != rhs._i;
-        }
-
-        difference_type operator - (const iterator& rhs) const
-        {
-            return rhs._i - _i;
-        }
-    };
-
-    FibonacciGenerator (int n) :
-        _n(n)
-    {}
-
-    iterator begin() const
-    {
-        return iterator(0, 1, 0);
-    }
-
-    iterator end() const
-    {
-        return iterator(0, 0, _n);
-    }
-private:
-    int _n;
-};
-
-int main()
-{
-    FibonacciGenerator g(10);
-    print(g.begin(), g.end());
-    cout << endl;
-
-    MyVector<int> a(10);
-    std::copy(g.begin(), g.end(), a.begin());
-    print(a.begin(), a.end());
-    cout << endl;
-
-    for (int t : FibonacciGenerator(5))
-        cout << t << endl;
-
-    return 0;
 }

@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <memory>
 
@@ -74,10 +76,4 @@ int sum_integers()
         result += *ptr;
     }
     return result;
-}
-
-int main()
-{
-    MyUniquePtr<int> ptr(create_int(5));
-    return 0;
 }

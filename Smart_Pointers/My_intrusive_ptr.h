@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <memory>
 
@@ -117,7 +119,7 @@ struct IntrusiveNode : public RefCounterBase
 
 void delete_even(Node_ptr head)
 {
-    for(IntrusiveNode* cur = head.get(); cur; cur = cur->next.get())
+    for (IntrusiveNode* cur = head.get(); cur; cur = cur->next.get())
         if (cur->next)
             cur->next = cur->next->next;
 }
@@ -137,18 +139,7 @@ Node_ptr create_list(std::size_t size)
 
 void print_list(Node_ptr head)
 {
-    for(IntrusiveNode* cur = head.get(); cur; cur = cur->next.get())
+    for (IntrusiveNode* cur = head.get(); cur; cur = cur->next.get())
         cout << cur->data << ' ';
     cout << endl;
-}
-
-int main()
-{
-    Node_ptr head = create_list(10);
-    Node_ptr second = head->next;
-
-    print_list(head);
-    delete_even(head);
-    print_list(head);
-    return 0;
 }
