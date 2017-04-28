@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы исходного кода\unit_tests">
+      <UniqueIdentifier>{d65b69d5-0055-45d7-b209-bef97afaa521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\big">
+      <UniqueIdentifier>{0f399adb-87d5-4624-afbb-e15f50a2bdd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\big\bool">
+      <UniqueIdentifier>{1e6673b0-ebfa-443f-9e8b-7727a9e2c84c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\big\modified functions">
+      <UniqueIdentifier>{93071c07-118d-41a0-be5f-fff6912ba5e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\big\vector">
+      <UniqueIdentifier>{033cfe9b-c95c-4649-ab1b-e53f4b4ab46e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\big\vector\implement_vector">
+      <UniqueIdentifier>{e01b869a-1acd-4774-b81b-aa101f157b1f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vector_b.h">
+      <Filter>Заголовочные файлы\big\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="vector_bool_b.h">
+      <Filter>Заголовочные файлы\big\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="va_bool_ref.h">
+      <Filter>Заголовочные файлы\big\bool</Filter>
+    </ClInclude>
+    <ClInclude Include="va_bool_iterator.h">
+      <Filter>Заголовочные файлы\big\bool</Filter>
+    </ClInclude>
+    <ClInclude Include="printfff.h">
+      <Filter>Заголовочные файлы\big\modified functions</Filter>
+    </ClInclude>
+    <ClInclude Include="bool_space.h">
+      <Filter>Заголовочные файлы\big\bool</Filter>
+    </ClInclude>
+    <ClInclude Include="implement_vector.hpp">
+      <Filter>Заголовочные файлы\big\vector\implement_vector</Filter>
+    </ClInclude>
+    <ClInclude Include="implement_vector_bool.hpp">
+      <Filter>Заголовочные файлы\big\vector\implement_vector</Filter>
+    </ClInclude>
+    <ClInclude Include="debug_tools.h">
+      <Filter>Заголовочные файлы\big</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptions.h">
+      <Filter>Заголовочные файлы\big</Filter>
+    </ClInclude>
+    <ClInclude Include="va_iterator.h">
+      <Filter>Заголовочные файлы\big</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test_array.cpp">
+      <Filter>Файлы исходного кода\unit_tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_stack.cpp">
+      <Filter>Файлы исходного кода\unit_tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_vector.cpp">
+      <Filter>Файлы исходного кода\unit_tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
