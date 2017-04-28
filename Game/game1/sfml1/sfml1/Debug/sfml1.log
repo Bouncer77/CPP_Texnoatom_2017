@@ -1,0 +1,14 @@
+﻿  main.cpp
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\player.h(51): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\player.h(82): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\main.cpp(40): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\main.cpp(48): warning C4305: аргумент: усечение из "double" к "float"
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\main.cpp(50): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\main.cpp(60): warning C4305: аргумент: усечение из "double" к "float"
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\main.cpp(62): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\main.cpp(71): warning C4305: аргумент: усечение из "double" к "float"
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\main.cpp(73): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\main.cpp(83): warning C4305: аргумент: усечение из "double" к "float"
+c:\users\orlan\documents\visual studio 2015\projects\sfml1\sfml1\main.cpp(85): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+  sfml1.vcxproj -> C:\Users\ORLAN\documents\visual studio 2015\Projects\sfml1\Debug\sfml1.exe
+  sfml1.vcxproj -> C:\Users\ORLAN\documents\visual studio 2015\Projects\sfml1\Debug\sfml1.pdb (Full PDB)
